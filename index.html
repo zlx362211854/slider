@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./slider.js"></script>
+</head>
+<body>
+<div id="container" style="border: 1px solid #d8d8d8"></div>
+<script>
+    var slider = new Slider();
+    slider.init({root: "container", width: 800, height: 500})
+        .setImages(['./image/1.jpg', './image/2.jpg', './image/3.jpg', './image/4.jpg'])
+        .start({speed: 3000, animateSpeed: 700});
+</script>
+</body>
+</html>
